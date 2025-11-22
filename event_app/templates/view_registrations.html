@@ -1,0 +1,23 @@
+<h1>Event Registrations</h1>
+
+<table border="1" cellpadding="8">
+    <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Phone</th>
+        <th>Event</th>
+        <th>Time</th>
+    </tr>
+
+    {% for r in data %}
+    <tr>
+        <td>{{ r.name }}</td>
+        <td>{{ r.email }}</td>
+        <td>{{ r.phone }}</td>
+        <td>{{ r.event_name }}</td>
+        <td>{{ r.created_at }}</td>
+    </tr>
+    {% endfor %}
+</table>
+<br>
+<a href="/">Go Back</a>
